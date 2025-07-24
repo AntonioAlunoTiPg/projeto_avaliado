@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import tkinter as tk
 from app.views.produto_view import abrir_interface as abrir_produto
 from app.views.cliente_view import abrir_interface as abrir_cliente

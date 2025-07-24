@@ -1,15 +1,15 @@
 from app.database.connection import conectar
 
-class ProdutoModel:
-    def __init__(self, nome, preco):
+class ClienteModel:
+    def __init__(self, nome, email):
         self.nome = nome
-        self.preco = preco
+        self.email = email
 
     @staticmethod
     def listar_todos():
         conn = conectar()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM produtos")
+        cursor.execute("SELECT * FROM clientes")
         resultado = cursor.fetchall()
         conn.close()
         return resultado
@@ -17,6 +17,6 @@ class ProdutoModel:
     def salvar(self):
         conn = conectar()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO produtos (nome, preco) VALUES (%s, %s)", (self.nome, self.preco))
+        cursor.execute("INSERT INTO clientes (nome, email) VALUES (%s, %s)", (self.nome, self.email))
         conn.commit()
         conn.close()

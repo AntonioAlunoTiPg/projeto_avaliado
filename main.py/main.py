@@ -1,4 +1,17 @@
-from app.views.produto_view import abrir_interface
+import tkinter as tk
+from app.views.produto_view import abrir_interface as abrir_produto
+from app.views.cliente_view import abrir_interface as abrir_cliente
+from app.views.venda_view import abrir_interface as abrir_venda
+
+def main():
+    janela = tk.Tk()
+    janela.title("Sistema de Controle de Loja")
+
+    tk.Button(janela, text="Produtos", width=20, command=lambda: [janela.destroy(), abrir_produto()]).pack(pady=5)
+    tk.Button(janela, text="Clientes", width=20, command=lambda: [janela.destroy(), abrir_cliente()]).pack(pady=5)
+    tk.Button(janela, text="Vendas", width=20, command=lambda: [janela.destroy(), abrir_venda()]).pack(pady=5)
+
+    janela.mainloop()
 
 if __name__ == "__main__":
-    abrir_interface()
+    main()

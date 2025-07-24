@@ -1,0 +1,18 @@
+# der_generator.py
+from graphviz import Digraph
+
+dot = Digraph(comment='Modelo ER Loja')
+
+# Entidades
+dot.node('C', 'Cliente\nid, nome, email')
+dot.node('P', 'Produto\nid, nome, preco')
+dot.node('V', 'Venda\nid, cliente_id, produto_id, quantidade, data_venda, valor_total')
+
+# Relacionamentos
+dot.edge('C', 'V', label='1..N')
+dot.edge('P', 'V', label='1..N')
+
+dot.render('docs/DER/modelo_loja', format='png')
+print("Arquivo docs/DER/modelo_loja.png gerado.")
+
+

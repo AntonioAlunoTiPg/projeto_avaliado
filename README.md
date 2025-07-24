@@ -119,54 +119,5 @@ Preparado para futura expansão: múltiplos itens, login, relatórios, etc
 
 Recomendado usar ambiente virtual (venv)
 
-👨‍💻 Autor
-Desenvolvido por [Seu Nome] — 2025
-Licença: Livre para uso acadêmico, pessoal ou educacional.
-
-🌍 English Version
-🛍️ Store Management System (Desktop)
-This is a Python-based desktop store management system using MVC architecture, Tkinter GUI, and MySQL database.
-
-✅ Features
-🛒 Product registration
-
-👤 Customer registration
-
-🧾 Sales registration (single-product per sale)
-
-🔧 MVC structure
-
-🖼️ Tkinter GUI
-
-🔐 Environment config with .env
-
-🚀 How to Run
-bash
-Copiar
-Editar
-# Clone and enter the project
-git clone https://github.com/seuusuario/loja_sistema.git
-cd loja_sistema
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python app/main.py
-🔐 .env Configuration
-ini
-Copiar
-Editar
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=loja_db
-📊 Database
-Database: loja_db
-
-Tables: produtos, clientes, vendas
-
-ER Diagram: docs/DER/modelo_banco.png
-
 👨‍💻 Author
 Desolvolvido por - [Antonio] — 2025

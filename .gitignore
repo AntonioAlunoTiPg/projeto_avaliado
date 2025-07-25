@@ -1,6 +1,6 @@
 # Ignore arquivos de ambiente
 .env
-*.env
+
 
 # Cache e arquivos compilados do Python
 __pycache__/

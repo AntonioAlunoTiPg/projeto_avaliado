@@ -1,4 +1,4 @@
-from app.database.connection import conectar
+from app.database.db_connection import conectar
 
 class ClienteModel:
     def __init__(self, nome, email):

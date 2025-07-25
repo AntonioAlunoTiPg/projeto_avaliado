@@ -1,10 +1,11 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import tkinter as tk
-from app.views.produto_view import abrir_interface as abrir_produto
-from app.views.cliente_view import abrir_interface as abrir_cliente
-from app.views.venda_view import abrir_interface as abrir_venda
+from views.produto_view import abrir_interface as abrir_produto
+from views.cliente_view import abrir_interface as abrir_cliente
+from views.venda_view import abrir_interface as abrir_venda
 
 def main():
     janela = tk.Tk()

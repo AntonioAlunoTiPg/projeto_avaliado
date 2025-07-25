@@ -1,0 +1,36 @@
+# Ignore arquivos de ambiente
+.env
+*.env
+
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Banco de dados local (caso você use SQLite também)
+*.sqlite3
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+
+# Configurações de IDEs/editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de sistema/macOS
+.DS_Store
+Thumbs.db
+
+# Arquivos de exportação de imagem/modelos (ex: DER gerado)
+docs/DER/*.png

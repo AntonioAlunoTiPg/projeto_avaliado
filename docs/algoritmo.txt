@@ -1,0 +1,5 @@
+1. Usuário abre o programa
+2. Interface exibe produtos existentes
+3. Usuário cadastra novo produto
+4. Sistema salva no MySQL
+5. Interface atualiza lista
